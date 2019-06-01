@@ -1,0 +1,8 @@
+spring:
+    rabbitmq:
+      host: voucher-rabbitmq # 地址
+      port: 5672 # 通信端口
+      username: vangelis # 账号
+      password: vangelis # 密码
+    server:
+      port: 8080 # 项目启动端口
