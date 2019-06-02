@@ -1,8 +1,10 @@
 spring:
     rabbitmq:
-      host: voucher-rabbitmq # 地址
+      host: 192.168.1.7 # 地址
       port: 5672 # 通信端口
-      username: vangelis # 账号
-      password: vangelis # 密码
+      username: guest # 账号
+      password: guest # 密码
+      publisher-confirms: true # 开启消息发送到交换机确认
+      publisher-returns: true # 开启消息发送到队列确认
     server:
       port: 8080 # 项目启动端口
